@@ -1,0 +1,37 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Node / Next.js (frontend/.gitignore covers the rest)
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+
+# Environment — keep the examples
+.env
+.env.*
+!.env.example
+
+# Deployment
+.vercel/
+
+# Local tooling artifacts
+.atl/
+.playwright-mcp/
+
+# Original brief (its content is tracked as prueba-tecnica.md)
+Prueba Tecnica - Backend Developer Python - GP.docx
+
+# OS / logs
+.DS_Store
+*.log
