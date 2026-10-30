@@ -1,6 +1,6 @@
 # Questionnaire Extractor
 
-Upload a PDF, DOCX, or XLSX questionnaire (up to 10 MB), review extracted items, and download the result as JSON.
+Upload a PDF, DOCX, or XLSX questionnaire (up to 4 MB), review extracted items, and download the result as JSON. See the [root README](../README.md) for the full project setup.
 
 ## Run locally
 
