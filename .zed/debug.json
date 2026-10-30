@@ -1,0 +1,14 @@
+[
+  {
+    "label": "Backend: FastAPI (uvicorn)",
+    "adapter": "Debugpy",
+    "request": "launch",
+    "module": "uvicorn",
+    // No --reload: the reloader runs the app in a child process; restart the session instead.
+    "args": ["questionary_extractor.main:app", "--port", "8000"],
+    // pydantic-settings reads backend/.env relative to this directory.
+    "cwd": "$ZED_WORKTREE_ROOT/backend",
+    "python": "$ZED_WORKTREE_ROOT/backend/.venv/bin/python",
+    "justMyCode": true
+  }
+]

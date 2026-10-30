@@ -23,5 +23,6 @@ def questionnaire_error_handler(
     request: Request, exc: QuestionnaireError
 ) -> JSONResponse:
     return JSONResponse(
-        content={"detail": str(exc)}, status_code=STATUS_BY_ERROR.get(type(exc), 500)
+        status_code=STATUS_BY_ERROR.get(type(exc), 500),
+        content={"detail": str(exc)},
     )

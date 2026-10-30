@@ -14,7 +14,7 @@ app = FastAPI(title="Questionnaire Extractor")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.cors_origins,
-    allow_methods=["*"],
+    allow_methods=["POST"],
     allow_headers=["*"],
 )
 app.add_exception_handler(QuestionnaireError, questionnaire_error_handler)
