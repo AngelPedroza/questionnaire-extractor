@@ -1,0 +1,199 @@
+{
+    "titulo": "Cuestionario GAD-7 – Trastorno de Ansiedad Generalizada",
+    "idioma": "es",
+    "total_items": 8,
+    "items": [
+        {
+            "numero": 8,
+            "enunciado": "Si marcó cualquiera de los problemas, ¿qué tanta dificultad le han causado estos problemas para hacer su trabajo, encargarse de las tareas del hogar o llevarse bien con otras personas?",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Nada difícil"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Un poco difícil"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Muy difícil"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Extremadamente difícil"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 1,
+            "enunciado": "Sentirse nervioso/a, intranquilo/a o con los nervios de punta",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 0,
+                    "texto": "Ningún día"
+                },
+                {
+                    "valor": 1,
+                    "texto": "Varios días"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Más de la mitad de los días"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Casi todos los días"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 2,
+            "enunciado": "No poder dejar de preocuparse o no poder controlar la preocupación",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 0,
+                    "texto": "Ningún día"
+                },
+                {
+                    "valor": 1,
+                    "texto": "Varios días"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Más de la mitad de los días"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Casi todos los días"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 3,
+            "enunciado": "Preocuparse demasiado por diferentes cosas",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 0,
+                    "texto": "Ningún día"
+                },
+                {
+                    "valor": 1,
+                    "texto": "Varios días"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Más de la mitad de los días"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Casi todos los días"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 4,
+            "enunciado": "Dificultad para relajarse",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 0,
+                    "texto": "Ningún día"
+                },
+                {
+                    "valor": 1,
+                    "texto": "Varios días"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Más de la mitad de los días"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Casi todos los días"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 5,
+            "enunciado": "Estar tan inquieto/a que es difícil permanecer sentado/a tranquilamente",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 0,
+                    "texto": "Ningún día"
+                },
+                {
+                    "valor": 1,
+                    "texto": "Varios días"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Más de la mitad de los días"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Casi todos los días"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 6,
+            "enunciado": "Molestarse o ponerse irritable fácilmente",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 0,
+                    "texto": "Ningún día"
+                },
+                {
+                    "valor": 1,
+                    "texto": "Varios días"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Más de la mitad de los días"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Casi todos los días"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 7,
+            "enunciado": "Sentir miedo como si algo terrible fuera a pasar",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 0,
+                    "texto": "Ningún día"
+                },
+                {
+                    "valor": 1,
+                    "texto": "Varios días"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Más de la mitad de los días"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Casi todos los días"
+                }
+            ],
+            "respuesta_correcta": null
+        }
+    ]
+}

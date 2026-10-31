@@ -27,3 +27,14 @@ dev = [
     "pytest>=9.2.0",
     "ruff>=0.17.3",
 ]
+
+[tool.pytest]
+minversion = "9.0"
+testpaths = ["tests"]
+addopts = ["-ra", "--import-mode=importlib", "-m", "not e2e"]
+strict_markers = true
+markers = [
+    "unit: fast, isolated tests of our code with no I/O or network",
+    "integration: our code with real libraries, sample files and the FastAPI app; LLM faked",
+    "e2e: full flow against a running Ollama model (slow; run with -m e2e)",
+]

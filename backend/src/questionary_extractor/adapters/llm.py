@@ -11,13 +11,17 @@ class QuestionnaireLLM(ABC):
     @staticmethod
     def from_settings(settings: Settings) -> "QuestionnaireLLM":
         # Imported here to avoid a circular import and to load only the selected SDK.
+        from questionary_extractor.adapters.circuit_breaker import CircuitBreakerLLM
+
         if settings.llm_provider == "gemini":
             from questionary_extractor.adapters.gemini_llm import GeminiQuestionnaireLLM
 
-            return GeminiQuestionnaireLLM(
-                settings.gemini_api_key, settings.gemini_model
+            return CircuitBreakerLLM(
+                GeminiQuestionnaireLLM(settings.gemini_api_key, settings.gemini_model)
             )
 
         from questionary_extractor.adapters.ollama_llm import OllamaQuestionnaireLLM
 
-        return OllamaQuestionnaireLLM(settings.ollama_host, settings.ollama_model)
+        return CircuitBreakerLLM(
+            OllamaQuestionnaireLLM(settings.ollama_host, settings.ollama_model)
+        )

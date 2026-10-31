@@ -1,6 +1,8 @@
 # Sample questionnaires
 
 Test documents for the questionnaire extractor. All content is public domain or original.
+Each document has the JSON returned by `POST /upload` next to it, with the same name and a `.json`
+extension (for `07`, the error response).
 
 | File | Instrument | Lang | Item types | Correct answer | Source / license |
 |---|---|---|---|---|---|

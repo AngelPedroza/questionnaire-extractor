@@ -1,0 +1,567 @@
+{
+    "titulo": "Mini-IPIP Personality Questionnaire (Big Five)",
+    "idioma": "en",
+    "total_items": 20,
+    "items": [
+        {
+            "numero": 1,
+            "enunciado": "Am the life of the party.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 2,
+            "enunciado": "Sympathize with others' feelings.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 3,
+            "enunciado": "Get chores done right away.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 4,
+            "enunciado": "Have frequent mood swings.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 5,
+            "enunciado": "Have a vivid imagination.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 6,
+            "enunciado": "Don't talk a lot.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 7,
+            "enunciado": "Am not interested in other people's problems.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 8,
+            "enunciado": "Often forget to put things back in their proper place.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 9,
+            "enunciado": "Am relaxed most of the time.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 10,
+            "enunciado": "Am not interested in abstract ideas.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 11,
+            "enunciado": "Talk to a lot of different people at parties.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 12,
+            "enunciado": "Feel others' emotions.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 13,
+            "enunciado": "Like order.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 14,
+            "enunciado": "Get upset easily.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 15,
+            "enunciado": "Have difficulty understanding abstract ideas.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 16,
+            "enunciado": "Keep in the background.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 17,
+            "enunciado": "Am not really interested in others.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 18,
+            "enunciado": "Make a mess of things.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 19,
+            "enunciado": "Seldom feel blue.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 20,
+            "enunciado": "Do not have a good imagination.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Very Inaccurate"
+                },
+                {
+                    "valor": 2,
+                    "texto": "Moderately Inaccurate"
+                },
+                {
+                    "valor": 3,
+                    "texto": "Neither Accurate Nor Inaccurate"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Moderately Accurate"
+                },
+                {
+                    "valor": 5,
+                    "texto": "Very Accurate"
+                }
+            ],
+            "respuesta_correcta": null
+        }
+    ]
+}

@@ -91,7 +91,7 @@ cp .env.example .env.local
 pnpm dev
 ```
 
-Open <http://localhost:3000>, choose a file from [`data/`](data/) and press **Extract**.
+Open <http://localhost:3000>, choose a file from [`examples/`](examples/) and press **Extract**.
 
 ## Environment variables
 
@@ -119,17 +119,28 @@ API keys go in environment variables only; `.env` files are git-ignored.
 | Method | Path | Description |
 |---|---|---|
 | `GET` | `/health` | Liveness check, returns `{"status": "ok"}` |
-| `POST` | `/upload` | Multipart form with a `file` field. Returns the questionnaire JSON |
+| `POST` | `/upload` | Multipart form with exactly one file in the `file` field. Returns the questionnaire JSON |
 
 Errors are returned as `{"detail": "<message>"}`:
 
 | Status | When |
 |---|---|
 | `413` | The file is larger than 4 MB |
+| `413` | The document is too long to process. Try a shorter file. (Ollama: over ~16,400 characters) |
 | `415` | Unsupported, corrupted or disguised file (e.g. a PDF renamed to `.docx`) |
 | `422` | No text could be extracted or no questionnaire items were detected |
+| `422` | More than one file was sent: "Send exactly one file per request." |
+| `500` | Something went wrong while processing the file. Please try again. |
 | `502` | The LLM returned an invalid response |
-| `503` | The LLM is not reachable |
+| `503` | The LLM is not reachable, or its circuit breaker is temporarily open |
+| `504` | The document took too long to process. Try a smaller file. |
+
+### Resilience
+
+- **Timeouts and transient-only retries:** Ollama uses a 180 s timeout and retries connection failures twice, but never retries a read timeout or an HTTP error. Gemini uses a 90 s timeout with at most two attempts for HTTP 429/503, connection failures and timeouts. Its nominal budget is about 185 s including backoff, below Vercel's 300 s limit; HTTP timeouts apply to network phases, not a strict end-to-end deadline.
+- **Circuit breaker:** three consecutive infrastructure failures open the circuit for 30 s. Calls fail fast while open; one half-open trial checks recovery. Success closes it, infrastructure failure reopens it, and content errors do not count. State is per process/Vercel instance and resets on cold start.
+- **Text budget:** the local Ollama context is deliberately kept at 8,192 tokens to limit memory use (~256 MB of KV cache on top of the 7.6 GB model). Input is capped at ~16,400 characters, computed in `adapters/ollama_llm.py` as `(context − prompt − answer reserve) × 3.5 chars/token`; the ratio is a conservative estimate, not a measured token count. Ollama's default keep-alive (5 minutes) unloads the model when idle, so the first request after a pause also pays the model load time.
+- **Error boundary:** unexpected processing errors are logged and return the generic JSON message with CORS headers, without taking down the application.
 
 ## Testing
 
@@ -149,7 +160,8 @@ backend/src/questionary_extractor/
 ├── config.py      # settings from environment variables
 └── main.py        # FastAPI app, CORS, error handler
 frontend/src/features/questionnaire/  # upload form, result view, API client
-data/              # sample questionnaires (public domain or original), see data/README.md
+examples/          # sample questionnaires + the JSON each one returns, see examples/README.md
+backend/tests/e2e/expected/  # expected extraction results used by the end-to-end tests
 ```
 
 A Zed debug configuration for the backend lives in `.zed/debug.json`.
@@ -166,4 +178,9 @@ A Zed debug configuration for the backend lives in `.zed/debug.json`.
 - **`idioma`** is the ISO 639-1 code of the document language.
 - **Local model: `qwen3.5:9b`.** Among models that fit an 18 GB laptop, it reports the strongest instruction following (IFEval 91.5) and multilingual scores (MMLU-ProX 76.3) on its [model card](https://huggingface.co/Qwen/Qwen3.5-9B). Extraction runs with `think=False` and temperature 0.
 - **Production LLM: Gemini.** The [Ollama docs](https://docs.ollama.com/capabilities/structured-outputs) state that Ollama Cloud does not support structured outputs, while Gemini enforces the JSON schema (`response_json_schema`). Both adapters share the same Pydantic schema and prompt.
-- **Sample data** contains only public-domain instruments (IPIP, GAD-7, Rosenberg) or original items; see [`data/README.md`](data/README.md).
+- **Sample data** contains only public-domain instruments (IPIP, GAD-7, Rosenberg) or original items; see [`examples/README.md`](examples/README.md).
+
+## Future work
+
+- Chunk long documents and merge their extracted items instead of rejecting over-budget input.
+- Move long-running extraction to asynchronous jobs with progress/status polling, outside the request timeout budget.

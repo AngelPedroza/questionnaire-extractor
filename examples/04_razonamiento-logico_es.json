@@ -1,0 +1,268 @@
+{
+    "titulo": "Prueba de Razonamiento Lógico",
+    "idioma": "es",
+    "total_items": 13,
+    "items": [
+        {
+            "numero": 1,
+            "enunciado": "¿Qué número continúa la serie? 3, 6, 12, 24, …",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "30"
+                },
+                {
+                    "valor": "B",
+                    "texto": "36"
+                },
+                {
+                    "valor": "C",
+                    "texto": "48"
+                },
+                {
+                    "valor": "D",
+                    "texto": "42"
+                }
+            ],
+            "respuesta_correcta": "C"
+        },
+        {
+            "numero": 2,
+            "enunciado": "¿Qué número continúa la serie? 2, 3, 5, 8, 12, …",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "17"
+                },
+                {
+                    "valor": "B",
+                    "texto": "15"
+                },
+                {
+                    "valor": "C",
+                    "texto": "16"
+                },
+                {
+                    "valor": "D",
+                    "texto": "18"
+                }
+            ],
+            "respuesta_correcta": "A"
+        },
+        {
+            "numero": 3,
+            "enunciado": "¿Qué número continúa la serie? 81, 27, 9, 3, …",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "0"
+                },
+                {
+                    "valor": "B",
+                    "texto": "1"
+                },
+                {
+                    "valor": "C",
+                    "texto": "1/3"
+                },
+                {
+                    "valor": "D",
+                    "texto": "6"
+                }
+            ],
+            "respuesta_correcta": "B"
+        },
+        {
+            "numero": 4,
+            "enunciado": "¿Qué letra continúa la serie? A, C, E, G, …",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "H"
+                },
+                {
+                    "valor": "B",
+                    "texto": "J"
+                },
+                {
+                    "valor": "C",
+                    "texto": "I"
+                },
+                {
+                    "valor": "D",
+                    "texto": "K"
+                }
+            ],
+            "respuesta_correcta": "C"
+        },
+        {
+            "numero": 5,
+            "enunciado": "¿Qué letra continúa la serie? B, E, H, K, …",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "M"
+                },
+                {
+                    "valor": "B",
+                    "texto": "N"
+                },
+                {
+                    "valor": "C",
+                    "texto": "O"
+                },
+                {
+                    "valor": "D",
+                    "texto": "L"
+                }
+            ],
+            "respuesta_correcta": "B"
+        },
+        {
+            "numero": 6,
+            "enunciado": "Libro es a leer como cuchillo es a…",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "cortar"
+                },
+                {
+                    "valor": "B",
+                    "texto": "cocina"
+                },
+                {
+                    "valor": "C",
+                    "texto": "metal"
+                },
+                {
+                    "valor": "D",
+                    "texto": "afilar"
+                }
+            ],
+            "respuesta_correcta": "A"
+        },
+        {
+            "numero": 7,
+            "enunciado": "Médico es a hospital como maestro es a…",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "alumno"
+                },
+                {
+                    "valor": "B",
+                    "texto": "lección"
+                },
+                {
+                    "valor": "C",
+                    "texto": "escuela"
+                },
+                {
+                    "valor": "D",
+                    "texto": "pizarra"
+                }
+            ],
+            "respuesta_correcta": "C"
+        },
+        {
+            "numero": 8,
+            "enunciado": "Frío es a calor como oscuridad es a…",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "noche"
+                },
+                {
+                    "valor": "B",
+                    "texto": "sombra"
+                },
+                {
+                    "valor": "C",
+                    "texto": "negro"
+                },
+                {
+                    "valor": "D",
+                    "texto": "luz"
+                }
+            ],
+            "respuesta_correcta": "D"
+        },
+        {
+            "numero": 9,
+            "enunciado": "Todos los gatos son mamíferos. Algunos mamíferos nadan. Por lo tanto:",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "Todos los gatos nadan."
+                },
+                {
+                    "valor": "B",
+                    "texto": "Algunos gatos nadan."
+                },
+                {
+                    "valor": "C",
+                    "texto": "No se puede concluir que algún gato nade."
+                },
+                {
+                    "valor": "D",
+                    "texto": "Ningún gato nada."
+                }
+            ],
+            "respuesta_correcta": "C"
+        },
+        {
+            "numero": 10,
+            "enunciado": "Ana es más alta que Bruno. Bruno es más alto que Carla. ¿Quién es la persona más baja?",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "Bruno"
+                },
+                {
+                    "valor": "B",
+                    "texto": "Carla"
+                },
+                {
+                    "valor": "C",
+                    "texto": "Ana"
+                },
+                {
+                    "valor": "D",
+                    "texto": "No se puede determinar"
+                }
+            ],
+            "respuesta_correcta": "B"
+        },
+        {
+            "numero": 11,
+            "enunciado": "Un bate y una pelota cuestan 1,10 € en total. El bate cuesta 1,00 € más que la pelota. ¿Cuánto cuesta la pelota?",
+            "tipo": "desarrollo",
+            "alternativas": [],
+            "respuesta_correcta": "0,05 € (5 céntimos)"
+        },
+        {
+            "numero": 12,
+            "enunciado": "Si 5 máquinas tardan 5 minutos en fabricar 5 piezas, ¿cuánto tardarían 100 máquinas en fabricar 100 piezas?",
+            "tipo": "desarrollo",
+            "alternativas": [],
+            "respuesta_correcta": "5 minutos"
+        },
+        {
+            "numero": 13,
+            "enunciado": "En un lago hay una mancha de nenúfares. Cada día la mancha duplica su tamaño. Si tarda 48 días en cubrir todo el lago, ¿cuántos días tardaría en cubrir la mitad del lago?",
+            "tipo": "desarrollo",
+            "alternativas": [],
+            "respuesta_correcta": "47 días"
+        }
+    ]
+}

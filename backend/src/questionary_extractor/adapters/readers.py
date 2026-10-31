@@ -20,11 +20,33 @@ from questionary_extractor.domain.errors import UnsupportedFileError
 def read_pdf(content: bytes) -> str:
     try:
         with pdfplumber.open(BytesIO(content)) as document:
-            return "\n".join(page.extract_text() or "" for page in document.pages)
+            return "\n".join(read_pdf_page(page) for page in document.pages)
     except Exception as exc:
         raise UnsupportedFileError(
             "The file could not be read; it may be corrupted."
         ) from exc
+
+
+def read_pdf_page(page) -> str:
+    # Plain text extraction scrambles table cells that wrap over several lines, so tables
+    # are read cell by cell and their area is removed from the plain text to avoid duplicates.
+    tables = page.find_tables()
+    boxes = [table.bbox for table in tables]
+
+    def outside_tables(obj) -> bool:
+        return not any(
+            x0 <= obj.get("x0", 0)
+            and obj.get("x1", 0) <= x1
+            and top <= obj.get("top", 0)
+            and obj.get("bottom", 0) <= bottom
+            for x0, top, x1, bottom in boxes
+        )
+
+    lines = [page.filter(outside_tables).extract_text() or ""]
+    for table in tables:
+        for row in table.extract():
+            lines.append(" | ".join(" ".join((cell or "").split()) for cell in row))
+    return "\n".join(lines)
 
 
 def read_docx(content: bytes) -> str:
