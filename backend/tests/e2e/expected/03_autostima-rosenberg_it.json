@@ -1,0 +1,247 @@
+{
+    "titulo": "Scala dell'Autostima di Rosenberg",
+    "idioma": "it",
+    "total_items": 10,
+    "items": [
+        {
+            "numero": 1,
+            "enunciado": "Penso di essere una persona di valore, almeno non meno degli altri.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Fortemente d'accordo"
+                },
+                {
+                    "valor": 2,
+                    "texto": "D'accordo"
+                },
+                {
+                    "valor": 3,
+                    "texto": "In disaccordo"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Fortemente in disaccordo"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 2,
+            "enunciado": "Penso di avere un certo numero di qualità.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Fortemente d'accordo"
+                },
+                {
+                    "valor": 2,
+                    "texto": "D'accordo"
+                },
+                {
+                    "valor": 3,
+                    "texto": "In disaccordo"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Fortemente in disaccordo"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 3,
+            "enunciado": "Tutto sommato tendo a pensare di essere un/una fallito/a.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Fortemente d'accordo"
+                },
+                {
+                    "valor": 2,
+                    "texto": "D'accordo"
+                },
+                {
+                    "valor": 3,
+                    "texto": "In disaccordo"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Fortemente in disaccordo"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 4,
+            "enunciado": "Sono in grado di fare le cose bene come la maggior parte delle persone.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Fortemente d'accordo"
+                },
+                {
+                    "valor": 2,
+                    "texto": "D'accordo"
+                },
+                {
+                    "valor": 3,
+                    "texto": "In disaccordo"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Fortemente in disaccordo"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 5,
+            "enunciado": "Penso di non avere molto di cui essere fiero/a.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Fortemente d'accordo"
+                },
+                {
+                    "valor": 2,
+                    "texto": "D'accordo"
+                },
+                {
+                    "valor": 3,
+                    "texto": "In disaccordo"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Fortemente in disaccordo"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 6,
+            "enunciado": "Ho un atteggiamento positivo verso me stesso/a.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Fortemente d'accordo"
+                },
+                {
+                    "valor": 2,
+                    "texto": "D'accordo"
+                },
+                {
+                    "valor": 3,
+                    "texto": "In disaccordo"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Fortemente in disaccordo"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 7,
+            "enunciado": "Nel complesso sono soddisfatto/a di me stesso/a.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Fortemente d'accordo"
+                },
+                {
+                    "valor": 2,
+                    "texto": "D'accordo"
+                },
+                {
+                    "valor": 3,
+                    "texto": "In disaccordo"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Fortemente in disaccordo"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 8,
+            "enunciado": "Vorrei avere più rispetto per me stesso/a.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Fortemente d'accordo"
+                },
+                {
+                    "valor": 2,
+                    "texto": "D'accordo"
+                },
+                {
+                    "valor": 3,
+                    "texto": "In disaccordo"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Fortemente in disaccordo"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 9,
+            "enunciado": "Certe volte mi sento proprio inutile.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Fortemente d'accordo"
+                },
+                {
+                    "valor": 2,
+                    "texto": "D'accordo"
+                },
+                {
+                    "valor": 3,
+                    "texto": "In disaccordo"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Fortemente in disaccordo"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 10,
+            "enunciado": "Certe volte penso di essere un/una buono/a a nulla.",
+            "tipo": "escala_likert",
+            "alternativas": [
+                {
+                    "valor": 1,
+                    "texto": "Fortemente d'accordo"
+                },
+                {
+                    "valor": 2,
+                    "texto": "D'accordo"
+                },
+                {
+                    "valor": 3,
+                    "texto": "In disaccordo"
+                },
+                {
+                    "valor": 4,
+                    "texto": "Fortemente in disaccordo"
+                }
+            ],
+            "respuesta_correcta": null
+        }
+    ]
+}

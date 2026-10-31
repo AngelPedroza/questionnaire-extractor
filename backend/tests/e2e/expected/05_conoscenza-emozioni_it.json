@@ -1,0 +1,248 @@
+{
+    "titulo": "Questionario di conoscenza delle emozioni",
+    "idioma": "it",
+    "total_items": 13,
+    "items": [
+        {
+            "numero": 1,
+            "enunciado": "La paura è una risposta emotiva a un pericolo percepito.",
+            "tipo": "verdadero_falso",
+            "alternativas": [
+                {
+                    "valor": "Vero",
+                    "texto": "Vero"
+                },
+                {
+                    "valor": "Falso",
+                    "texto": "Falso"
+                }
+            ],
+            "respuesta_correcta": "Vero"
+        },
+        {
+            "numero": 2,
+            "enunciado": "Reprimere sempre le emozioni negative è la strategia più sana per gestirle.",
+            "tipo": "verdadero_falso",
+            "alternativas": [
+                {
+                    "valor": "Vero",
+                    "texto": "Vero"
+                },
+                {
+                    "valor": "Falso",
+                    "texto": "Falso"
+                }
+            ],
+            "respuesta_correcta": "Falso"
+        },
+        {
+            "numero": 3,
+            "enunciado": "L'empatia è la capacità di comprendere e condividere lo stato emotivo di un'altra persona.",
+            "tipo": "verdadero_falso",
+            "alternativas": [
+                {
+                    "valor": "Vero",
+                    "texto": "Vero"
+                },
+                {
+                    "valor": "Falso",
+                    "texto": "Falso"
+                }
+            ],
+            "respuesta_correcta": "Vero"
+        },
+        {
+            "numero": 4,
+            "enunciado": "Le emozioni non hanno alcun effetto sul corpo.",
+            "tipo": "verdadero_falso",
+            "alternativas": [
+                {
+                    "valor": "Vero",
+                    "texto": "Vero"
+                },
+                {
+                    "valor": "Falso",
+                    "texto": "Falso"
+                }
+            ],
+            "respuesta_correcta": "Falso"
+        },
+        {
+            "numero": 5,
+            "enunciado": "Dare un nome a ciò che si prova può aiutare a regolare un'emozione.",
+            "tipo": "verdadero_falso",
+            "alternativas": [
+                {
+                    "valor": "Vero",
+                    "texto": "Vero"
+                },
+                {
+                    "valor": "Falso",
+                    "texto": "Falso"
+                }
+            ],
+            "respuesta_correcta": "Vero"
+        },
+        {
+            "numero": 6,
+            "enunciado": "Gioia",
+            "tipo": "emparejamiento",
+            "alternativas": [
+                {
+                    "valor": "a",
+                    "texto": "Reazione a qualcosa di inatteso."
+                },
+                {
+                    "valor": "b",
+                    "texto": "Senso di perdita o di delusione."
+                },
+                {
+                    "valor": "c",
+                    "texto": "Benessere legato a un evento positivo."
+                },
+                {
+                    "valor": "d",
+                    "texto": "Repulsione verso qualcosa di sgradevole."
+                },
+                {
+                    "valor": "e",
+                    "texto": "Reazione a un'ingiustizia o a un ostacolo."
+                }
+            ],
+            "respuesta_correcta": "c"
+        },
+        {
+            "numero": 7,
+            "enunciado": "Tristezza",
+            "tipo": "emparejamiento",
+            "alternativas": [
+                {
+                    "valor": "a",
+                    "texto": "Reazione a qualcosa di inatteso."
+                },
+                {
+                    "valor": "b",
+                    "texto": "Senso di perdita o di delusione."
+                },
+                {
+                    "valor": "c",
+                    "texto": "Benessere legato a un evento positivo."
+                },
+                {
+                    "valor": "d",
+                    "texto": "Repulsione verso qualcosa di sgradevole."
+                },
+                {
+                    "valor": "e",
+                    "texto": "Reazione a un'ingiustizia o a un ostacolo."
+                }
+            ],
+            "respuesta_correcta": "b"
+        },
+        {
+            "numero": 8,
+            "enunciado": "Rabbia",
+            "tipo": "emparejamiento",
+            "alternativas": [
+                {
+                    "valor": "a",
+                    "texto": "Reazione a qualcosa di inatteso."
+                },
+                {
+                    "valor": "b",
+                    "texto": "Senso di perdita o di delusione."
+                },
+                {
+                    "valor": "c",
+                    "texto": "Benessere legato a un evento positivo."
+                },
+                {
+                    "valor": "d",
+                    "texto": "Repulsione verso qualcosa di sgradevole."
+                },
+                {
+                    "valor": "e",
+                    "texto": "Reazione a un'ingiustizia o a un ostacolo."
+                }
+            ],
+            "respuesta_correcta": "e"
+        },
+        {
+            "numero": 9,
+            "enunciado": "Disgusto",
+            "tipo": "emparejamiento",
+            "alternativas": [
+                {
+                    "valor": "a",
+                    "texto": "Reazione a qualcosa di inatteso."
+                },
+                {
+                    "valor": "b",
+                    "texto": "Senso di perdita o di delusione."
+                },
+                {
+                    "valor": "c",
+                    "texto": "Benessere legato a un evento positivo."
+                },
+                {
+                    "valor": "d",
+                    "texto": "Repulsione verso qualcosa di sgradevole."
+                },
+                {
+                    "valor": "e",
+                    "texto": "Reazione a un'ingiustizia o a un ostacolo."
+                }
+            ],
+            "respuesta_correcta": "d"
+        },
+        {
+            "numero": 10,
+            "enunciado": "Sorpresa",
+            "tipo": "emparejamiento",
+            "alternativas": [
+                {
+                    "valor": "a",
+                    "texto": "Reazione a qualcosa di inatteso."
+                },
+                {
+                    "valor": "b",
+                    "texto": "Senso di perdita o di delusione."
+                },
+                {
+                    "valor": "c",
+                    "texto": "Benessere legato a un evento positivo."
+                },
+                {
+                    "valor": "d",
+                    "texto": "Repulsione verso qualcosa di sgradevole."
+                },
+                {
+                    "valor": "e",
+                    "texto": "Reazione a un'ingiustizia o a un ostacolo."
+                }
+            ],
+            "respuesta_correcta": "a"
+        },
+        {
+            "numero": 11,
+            "enunciado": "Descriva una situazione in cui è riuscito/a a gestire un'emozione intensa. Che cosa ha fatto?",
+            "tipo": "desarrollo",
+            "alternativas": [],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 12,
+            "enunciado": "Come si accorge che un collega è sotto stress? Indichi almeno due segnali.",
+            "tipo": "desarrollo",
+            "alternativas": [],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 13,
+            "enunciado": "Quali strategie utilizza per ritrovare la calma dopo un conflitto?",
+            "tipo": "desarrollo",
+            "alternativas": [],
+            "respuesta_correcta": null
+        }
+    ]
+}

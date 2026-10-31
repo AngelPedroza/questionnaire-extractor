@@ -1,0 +1,223 @@
+{
+    "titulo": null,
+    "idioma": "en",
+    "total_items": 11,
+    "items": [
+        {
+            "numero": 1,
+            "enunciado": "A customer is angry because their order arrived damaged. What is the best first response?",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "Explain that the shipping company is responsible."
+                },
+                {
+                    "valor": "B",
+                    "texto": "Apologize, listen to the details and offer a replacement or a refund."
+                },
+                {
+                    "valor": "C",
+                    "texto": "Ask them to call back later when they are calmer."
+                },
+                {
+                    "valor": "D",
+                    "texto": "Transfer them to another department immediately."
+                }
+            ],
+            "respuesta_correcta": "B"
+        },
+        {
+            "numero": 2,
+            "enunciado": "You notice a colleague made an error in a report that is due to the client today. What do you do?",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "Ignore it; it is not your report."
+                },
+                {
+                    "valor": "B",
+                    "texto": "Correct it silently without telling anyone."
+                },
+                {
+                    "valor": "C",
+                    "texto": "Tell your colleague about the error so it can be fixed before sending."
+                },
+                {
+                    "valor": "D",
+                    "texto": "Report the colleague to your manager."
+                }
+            ],
+            "respuesta_correcta": "C"
+        },
+        {
+            "numero": 3,
+            "enunciado": "Your manager assigns you an urgent task while you are already working on another deadline. What do you do?",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "Work on whichever task you prefer."
+                },
+                {
+                    "valor": "B",
+                    "texto": "Explain your current workload and ask which task should take priority."
+                },
+                {
+                    "valor": "C",
+                    "texto": "Accept both and work overtime without telling anyone."
+                },
+                {
+                    "valor": "D",
+                    "texto": "Decline the new task."
+                }
+            ],
+            "respuesta_correcta": "B"
+        },
+        {
+            "numero": 4,
+            "enunciado": "During a team meeting, two colleagues start arguing about how to solve a problem. What do you do?",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "Leave the meeting."
+                },
+                {
+                    "valor": "B",
+                    "texto": "Take one side to end the discussion quickly."
+                },
+                {
+                    "valor": "C",
+                    "texto": "Suggest summarizing both proposals and evaluating them against the project goals."
+                },
+                {
+                    "valor": "D",
+                    "texto": "Stay silent and wait for the manager to intervene."
+                }
+            ],
+            "respuesta_correcta": "C"
+        },
+        {
+            "numero": 5,
+            "enunciado": "You realize you will miss a deadline you committed to. What do you do?",
+            "tipo": "seleccion_multiple",
+            "alternativas": [
+                {
+                    "valor": "A",
+                    "texto": "Inform the stakeholders as early as possible and propose a new date."
+                },
+                {
+                    "valor": "B",
+                    "texto": "Wait until the deadline passes and then apologize."
+                },
+                {
+                    "valor": "C",
+                    "texto": "Submit incomplete work without saying anything."
+                },
+                {
+                    "valor": "D",
+                    "texto": "Blame external factors."
+                }
+            ],
+            "respuesta_correcta": "A"
+        },
+        {
+            "numero": 6,
+            "enunciado": "I double-check my work before submitting it.",
+            "tipo": "verdadero_falso",
+            "alternativas": [
+                {
+                    "valor": "True",
+                    "texto": "True"
+                },
+                {
+                    "valor": "False",
+                    "texto": "False"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 7,
+            "enunciado": "I prefer to work on several tasks at the same time.",
+            "tipo": "verdadero_falso",
+            "alternativas": [
+                {
+                    "valor": "True",
+                    "texto": "True"
+                },
+                {
+                    "valor": "False",
+                    "texto": "False"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 8,
+            "enunciado": "I find it easy to ask for help when I need it.",
+            "tipo": "verdadero_falso",
+            "alternativas": [
+                {
+                    "valor": "True",
+                    "texto": "True"
+                },
+                {
+                    "valor": "False",
+                    "texto": "False"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 9,
+            "enunciado": "I get frustrated when plans change at the last minute.",
+            "tipo": "verdadero_falso",
+            "alternativas": [
+                {
+                    "valor": "True",
+                    "texto": "True"
+                },
+                {
+                    "valor": "False",
+                    "texto": "False"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 10,
+            "enunciado": "I keep my workspace organized.",
+            "tipo": "verdadero_falso",
+            "alternativas": [
+                {
+                    "valor": "True",
+                    "texto": "True"
+                },
+                {
+                    "valor": "False",
+                    "texto": "False"
+                }
+            ],
+            "respuesta_correcta": null
+        },
+        {
+            "numero": 11,
+            "enunciado": "I enjoy meeting new people at work.",
+            "tipo": "verdadero_falso",
+            "alternativas": [
+                {
+                    "valor": "True",
+                    "texto": "True"
+                },
+                {
+                    "valor": "False",
+                    "texto": "False"
+                }
+            ],
+            "respuesta_correcta": null
+        }
+    ]
+}
