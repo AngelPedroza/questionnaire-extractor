@@ -57,7 +57,7 @@ Next.js UI ──POST /upload──▶ FastAPI
 | Frontend | Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS, Vitest |
 | Backend | Python 3.13, FastAPI, Pydantic, pydantic-settings, uv, Pytest, Ruff |
 | File parsing | pdfplumber, python-docx, openpyxl |
-| LLM | Ollama + `qwen3.5:9b` (local), Google Gemini free tier (production) |
+| LLM | Ollama + `qwen3.5:9b` (local), Google Gemini `gemini-3.5-flash` free tier (production) |
 
 ## Getting started
 
@@ -103,7 +103,7 @@ Open <http://localhost:3000>, choose a file from [`examples/`](examples/) and pr
 | `OLLAMA_HOST` | `http://localhost:11434` | Ollama server URL |
 | `OLLAMA_MODEL` | `qwen3.5:9b` | Local model used for extraction |
 | `GEMINI_API_KEY` | — | Required when `LLM_PROVIDER=gemini`. Get one at [Google AI Studio](https://aistudio.google.com/apikey) |
-| `GEMINI_MODEL` | `gemini-flash-latest` | Gemini model used for extraction |
+| `GEMINI_MODEL` | `gemini-3.5-flash` | Gemini model used for extraction |
 | `CORS_ORIGINS` | `["http://localhost:3000"]` | JSON list of allowed frontend origins |
 
 ### Frontend (`frontend/.env.local`)
@@ -178,6 +178,7 @@ A Zed debug configuration for the backend lives in `.zed/debug.json`.
 - **`idioma`** is the ISO 639-1 code of the document language.
 - **Local model: `qwen3.5:9b`.** Among models that fit an 18 GB laptop, it reports the strongest instruction following (IFEval 91.5) and multilingual scores (MMLU-ProX 76.3) on its [model card](https://huggingface.co/Qwen/Qwen3.5-9B). Extraction runs with `think=False` and temperature 0.
 - **Production LLM: Gemini.** The [Ollama docs](https://docs.ollama.com/capabilities/structured-outputs) state that Ollama Cloud does not support structured outputs, while Gemini enforces the JSON schema (`response_json_schema`). Both adapters share the same Pydantic schema and prompt.
+- **Gemini model: `gemini-3.5-flash`, pinned, with `thinking_level="LOW"`.** Measured on the free tier on 2026-10-31 with the GAD-7 sample: `gemini-flash-latest` (then served by `gemini-3.8-flash`) took 62–78 s per document and returned 503 on 3 of the 7 e2e cases; `gemini-flash-lite-latest` answered in 5 s but corrupted accented characters (`Ningún` → `Ningan`); `gemini-3.5-flash` answered in about 5 s, and the whole e2e suite ran in 37 s without a 503. A fixed version is used instead of a `-latest` alias, so Google cannot swap the model behind the validated prompt. Low thinking mirrors `think=False` locally: copying fields needs little reasoning.
 - **Sample data** contains only public-domain instruments (IPIP, GAD-7, Rosenberg) or original items; see [`examples/README.md`](examples/README.md).
 
 ## Future work

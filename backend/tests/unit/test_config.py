@@ -11,7 +11,7 @@ def test_settings_use_defaults_without_dotenv_or_environment():
         "ollama_host": "http://localhost:11434",
         "ollama_model": "qwen3.5:9b",
         "gemini_api_key": "",
-        "gemini_model": "gemini-flash-latest",
+        "gemini_model": "gemini-3.5-flash",
         "cors_origins": ["http://localhost:3000"],
     }
 

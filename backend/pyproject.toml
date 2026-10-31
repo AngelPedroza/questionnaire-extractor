@@ -28,6 +28,10 @@ dev = [
     "ruff>=0.17.3",
 ]
 
+[tool.vercel]
+# Vercel only auto-detects main.py/app.py at the root or in src/; our app lives in a package.
+entrypoint = "questionary_extractor.main:app"
+
 [tool.pytest]
 minversion = "9.0"
 testpaths = ["tests"]

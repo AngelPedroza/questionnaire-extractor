@@ -47,6 +47,8 @@ class GeminiQuestionnaireLLM(QuestionnaireLLM):
                     response_mime_type="application/json",
                     response_json_schema=Questionnaire.model_json_schema(),
                     temperature=0,
+                    # Copying fields needs little reasoning; LOW mirrors think=False on Ollama.
+                    thinking_config=types.ThinkingConfig(thinking_level="LOW"),
                 ),
             )
             return Questionnaire.model_validate_json(response.text)

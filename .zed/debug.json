@@ -10,5 +10,15 @@
     "cwd": "$ZED_WORKTREE_ROOT/backend",
     "python": "$ZED_WORKTREE_ROOT/backend/.venv/bin/python",
     "justMyCode": true
+  },
+  {
+    "label": "Frontend: Chrome (client-side)",
+    "adapter": "JavaScript",
+    "type": "chrome",
+    "request": "launch",
+    // Start `pnpm dev` in frontend/ first; this opens a debuggable Chrome on the dev server.
+    "url": "http://localhost:3000",
+    "webRoot": "$ZED_WORKTREE_ROOT/frontend",
+    "skipFiles": ["<node_internals>/**", "**/node_modules/**"]
   }
 ]

@@ -1,0 +1,5 @@
+# The Vercel CLI ignores .env.local but not .env, and does not read .gitignore.
+.env
+tests/
+.pytest_cache/
+.ruff_cache/

@@ -95,6 +95,7 @@ def test_request_sends_prompt_schema_and_deterministic_config(
     assert config.response_json_schema == Questionnaire.model_json_schema()
     assert config.response_mime_type == "application/json"
     assert config.temperature == 0
+    assert config.thinking_config.thinking_level == "LOW"
 
 
 @pytest.mark.parametrize("timeout_type", ["ReadTimeout", "ConnectTimeout"])
