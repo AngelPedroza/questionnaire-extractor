@@ -33,7 +33,7 @@ export default function UploadForm({
           className="block w-full min-w-0 rounded border border-zinc-300 p-2 text-sm file:mr-3 file:rounded file:bg-zinc-100 file:px-3 file:py-2 file:font-medium focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-zinc-700 disabled:opacity-50"
         />
         <p id="file-help" className="text-sm text-zinc-600">
-          PDF, DOCX, or XLSX. Maximum file size: 4 MB.
+          One file only — PDF, DOCX or XLSX, up to 4 MB.
         </p>
       </div>
       <button
@@ -44,7 +44,7 @@ export default function UploadForm({
         {loading ? "Extracting…" : "Extract"}
       </button>
       <p role="status" aria-live="polite" className="text-sm text-zinc-600">
-        {loading ? "Extracting your questionnaire. Please wait." : ""}
+        {loading ? "Extracting your questionnaire. This can take up to a minute." : ""}
       </p>
     </form>
   );

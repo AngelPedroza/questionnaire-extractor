@@ -4,8 +4,10 @@ import { useState } from "react";
 import { extractQuestionnaire } from "../api";
 import { validateQuestionnaireFile } from "../file-validation";
 import type { Questionnaire } from "../types";
-import QuestionnaireResult from "./QuestionnaireResult";
-import UploadForm from "./UploadForm";
+import QuestionnaireResult from "./result/QuestionnaireResult";
+import ResultsPlaceholder from "./result/ResultsPlaceholder";
+import HowItWorks from "./upload/HowItWorks";
+import UploadForm from "./upload/UploadForm";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -54,6 +56,7 @@ export default function QuestionnaireExtractor() {
         <p className="text-zinc-600">
           Upload a questionnaire to view and download its questions as JSON.
         </p>
+        <HowItWorks />
       </header>
       <UploadForm
         canExtract={file !== null}
@@ -66,8 +69,10 @@ export default function QuestionnaireExtractor() {
           {error}
         </p>
       )}
-      {status === "success" && result && file && (
+      {result && file ? (
         <QuestionnaireResult result={result} fileName={file.name} />
+      ) : (
+        <ResultsPlaceholder />
       )}
     </main>
   );

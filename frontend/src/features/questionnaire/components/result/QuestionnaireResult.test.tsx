@@ -1,7 +1,7 @@
 import { cleanup, render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { afterEach, describe, expect, it, vi } from "vitest";
-import type { Questionnaire, QuestionnaireItemType } from "../types";
+import type { Questionnaire, QuestionnaireItemType } from "../../types";
 import QuestionnaireResult from "./QuestionnaireResult";
 
 const result: Questionnaire = {
