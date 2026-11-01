@@ -4,7 +4,22 @@
 
 Psychometric questionnaires often live in PDF, Word or Excel files, and loading them into a digital platform by hand takes hours. This app reads the document, detects each item, its type and its options with an LLM, and returns a JSON that follows one fixed schema. Documents in Italian, Spanish and English are supported.
 
-**Live demo:** _pending deployment_
+## Try it
+
+Open **https://questionnaire-extractor.vercel.app** — no login or setup needed.
+
+1. Download a sample file from [`examples/`](examples/) (or use your own questionnaire).
+2. Under **Questionnaire file**, choose one PDF, DOCX or XLSX file of up to 4 MB.
+3. Press **Extract** and wait a few seconds.
+4. Expand any item to see its options and correct answer, then press **Download JSON** (or **Show raw JSON** to read it on the page).
+
+Each IP can extract 10 files every 10 minutes. The JSON produced for every sample is in [`examples/`](examples/) next to its source file.
+
+To call the API directly instead of the UI:
+
+```bash
+curl -F "file=@examples/02_gad-7_ansiedad_es.docx" https://questionnaire-extractor-api.vercel.app/upload
+```
 
 ## How it works
 
@@ -130,6 +145,7 @@ Errors are returned as `{"detail": "<message>"}`:
 | `415` | Unsupported, corrupted or disguised file (e.g. a PDF renamed to `.docx`) |
 | `422` | No text could be extracted or no questionnaire items were detected |
 | `422` | More than one file was sent: "Send exactly one file per request." |
+| `429` | More than 10 uploads from the same IP in 10 minutes (production only). Returned by the Vercel Firewall before the request reaches the API, as plain text without CORS headers, so the browser reports it as a connection error |
 | `500` | Something went wrong while processing the file. Please try again. |
 | `502` | The LLM returned an invalid response |
 | `503` | The LLM is not reachable, or its circuit breaker is temporarily open |
@@ -179,6 +195,7 @@ A Zed debug configuration for the backend lives in `.zed/debug.json`.
 - **Local model: `qwen3.5:9b`.** Among models that fit an 18 GB laptop, it reports the strongest instruction following (IFEval 91.5) and multilingual scores (MMLU-ProX 76.3) on its [model card](https://huggingface.co/Qwen/Qwen3.5-9B). Extraction runs with `think=False` and temperature 0.
 - **Production LLM: Gemini.** The [Ollama docs](https://docs.ollama.com/capabilities/structured-outputs) state that Ollama Cloud does not support structured outputs, while Gemini enforces the JSON schema (`response_json_schema`). Both adapters share the same Pydantic schema and prompt.
 - **Gemini model: `gemini-3.5-flash`, pinned, with `thinking_level="LOW"`.** Measured on the free tier on 2026-10-31 with the GAD-7 sample: `gemini-flash-latest` (then served by `gemini-3.8-flash`) took 62–78 s per document and returned 503 on 3 of the 7 e2e cases; `gemini-flash-lite-latest` answered in 5 s but corrupted accented characters (`Ningún` → `Ningan`); `gemini-3.5-flash` answered in about 5 s, and the whole e2e suite ran in 37 s without a 503. A fixed version is used instead of a `-latest` alias, so Google cannot swap the model behind the validated prompt. Low thinking mirrors `think=False` locally: copying fields needs little reasoning.
+- **Rate limit instead of authentication.** The API has no login so evaluators can use the demo without extra steps, and a key shipped to the browser would be public anyway. To stop a single client from exhausting the Gemini quota, a Vercel WAF rule limits `POST /upload` to 10 requests per IP every 10 minutes and answers `429` beyond that. The rule lives in the Vercel project's Firewall settings, not in the code, so local development is not limited. Limits: counters are per Vercel region, and many distinct IPs could still drain the quota; an access code or user accounts would be the next step.
 - **Sample data** contains only public-domain instruments (IPIP, GAD-7, Rosenberg) or original items; see [`examples/README.md`](examples/README.md).
 
 ## Future work

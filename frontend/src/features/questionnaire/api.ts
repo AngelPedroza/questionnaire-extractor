@@ -17,7 +17,10 @@ export async function extractQuestionnaire(
       body: formData,
     });
   } catch {
-    throw new Error("Could not reach the server. Please check your connection and try again.");
+    // The Vercel Firewall rate limit answers 429 without CORS headers, so the browser reports it as a network error.
+    throw new Error(
+      "Could not reach the server. Check your connection, or wait a few minutes if you sent several files in a row.",
+    );
   }
 
   let body: unknown;

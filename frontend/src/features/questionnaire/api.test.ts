@@ -93,7 +93,7 @@ describe("extractQuestionnaire", () => {
   it("reports network failures in friendly language", async () => {
     fetchMock.mockRejectedValue(new TypeError("Failed to fetch"));
     await expect(extractQuestionnaire(file)).rejects.toThrow(
-      "Could not reach the server. Please check your connection and try again.",
+      "Could not reach the server. Check your connection, or wait a few minutes if you sent several files in a row.",
     );
   });
 });

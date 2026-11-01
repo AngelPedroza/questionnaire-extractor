@@ -30,7 +30,8 @@ dev = [
 
 [tool.vercel]
 # Vercel only auto-detects main.py/app.py at the root or in src/; our app lives in a package.
-entrypoint = "questionary_extractor.main:app"
+# The module is resolved as a file path from this folder, hence the "src." prefix.
+entrypoint = "src.questionary_extractor.main:app"
 
 [tool.pytest]
 minversion = "9.0"
